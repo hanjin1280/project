@@ -28,84 +28,106 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.목록관리LToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.회원관리MToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.회원성향분석SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.통계SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // button4
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.목록관리LToolStripMenuItem,
-            this.회원관리MToolStripMenuItem,
-            this.회원성향분석SToolStripMenuItem,
-            this.통계SToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(21, 75);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1758, 28);
-            this.menuStrip1.TabIndex = 4;
-            this.menuStrip1.Text = "menuStrip1";
+            this.button4.BackColor = System.Drawing.Color.MediumPurple;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(0, 490);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(200, 106);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "통계(&S)";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.통계SToolStripMenuItem_Click);
             // 
-            // 목록관리LToolStripMenuItem
+            // button3
             // 
-            this.목록관리LToolStripMenuItem.Name = "목록관리LToolStripMenuItem";
-            this.목록관리LToolStripMenuItem.Size = new System.Drawing.Size(100, 24);
-            this.목록관리LToolStripMenuItem.Text = "목록관리(&L)";
-            this.목록관리LToolStripMenuItem.Click += new System.EventHandler(this.목록관리LToolStripMenuItem_Click);
+            this.button3.BackColor = System.Drawing.Color.MediumPurple;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(0, 351);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(200, 106);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "회원성향차이분석(&A)";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.회원성향분석SToolStripMenuItem_Click);
             // 
-            // 회원관리MToolStripMenuItem
+            // panel1
             // 
-            this.회원관리MToolStripMenuItem.Name = "회원관리MToolStripMenuItem";
-            this.회원관리MToolStripMenuItem.Size = new System.Drawing.Size(107, 24);
-            this.회원관리MToolStripMenuItem.Text = "회원관리(&M)";
-            this.회원관리MToolStripMenuItem.Click += new System.EventHandler(this.회원관리MToolStripMenuItem_Click);
+            this.panel1.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(21, 75);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 667);
+            this.panel1.TabIndex = 6;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // 회원성향분석SToolStripMenuItem
+            // button2
             // 
-            this.회원성향분석SToolStripMenuItem.Name = "회원성향분석SToolStripMenuItem";
-            this.회원성향분석SToolStripMenuItem.Size = new System.Drawing.Size(163, 24);
-            this.회원성향분석SToolStripMenuItem.Text = "회원성향차이분석(&A)";
-            this.회원성향분석SToolStripMenuItem.Click += new System.EventHandler(this.회원성향분석SToolStripMenuItem_Click);
+            this.button2.BackColor = System.Drawing.Color.MediumPurple;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.MediumPurple;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(0, 212);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(200, 106);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "회원관리(&M)";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.회원관리MToolStripMenuItem_Click);
             // 
-            // 통계SToolStripMenuItem
+            // button1
             // 
-            this.통계SToolStripMenuItem.Name = "통계SToolStripMenuItem";
-            this.통계SToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
-            this.통계SToolStripMenuItem.Text = "통계(&S)";
-            this.통계SToolStripMenuItem.Click += new System.EventHandler(this.통계SToolStripMenuItem_Click);
+            this.button1.BackColor = System.Drawing.Color.MediumPurple;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.MediumPurple;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(0, 73);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 106);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "목록관리(&L)";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.목록관리LToolStripMenuItem_Click);
             // 
             // AdministrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1800, 1102);
-            this.Controls.Add(this.menuStrip1);
+            this.ClientSize = new System.Drawing.Size(1592, 762);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
-            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AdministrationForm";
             this.Padding = new System.Windows.Forms.Padding(21, 75, 21, 20);
             this.Text = "관리자";
-            this.TransparencyKey = System.Drawing.Color.Empty;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AdministrationForm_FormClosing);
             this.Load += new System.EventHandler(this.AdministrationForm_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem 목록관리LToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 회원관리MToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 통계SToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 회원성향분석SToolStripMenuItem;
+
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

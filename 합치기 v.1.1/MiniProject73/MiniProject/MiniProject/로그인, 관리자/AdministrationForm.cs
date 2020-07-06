@@ -80,6 +80,11 @@ namespace MiniProject
             DiffShowForm form = new DiffShowForm();
             InitChildForm(form, "성향차이분석");
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 
