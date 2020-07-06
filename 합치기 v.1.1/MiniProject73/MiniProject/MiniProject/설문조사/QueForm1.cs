@@ -495,5 +495,10 @@ namespace MiniProject
             }
             this.Close();
         }
+
+        private void metroPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
