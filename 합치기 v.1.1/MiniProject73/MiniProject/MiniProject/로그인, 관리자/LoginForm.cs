@@ -1,6 +1,8 @@
-﻿using System;
+﻿using MetroFramework;
+using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace MiniProject
@@ -27,7 +29,7 @@ namespace MiniProject
             //if (!rdbtnAdmin.Checked && !rdbtnMember.Checked && !string.IsNullOrEmpty(txtID.Text) && !string.IsNullOrEmpty(txtPassword.Text))
             if ((!rdbtnAdmin.Checked && !rdbtnMember.Checked))
             {
-                MessageBox.Show("관리자/사용자 모드를 선택해 주세요.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroMessageBox.Show(this,"관리자/사용자 모드를 선택해 주세요.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 // HJ 추가 [20200703 14:21] : return 추가
                 return;
             }
@@ -38,7 +40,7 @@ namespace MiniProject
         {
             if (string.IsNullOrEmpty(txtID.Text) || string.IsNullOrEmpty(txtPassword.Text))
             {
-                MessageBox.Show("아이디/패스워드를 입력하세요.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);               
+                MetroMessageBox.Show(this,"아이디/패스워드를 입력하세요.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);               
                 txtID.Focus();
                 // HJ 위치 수정 [20200703 14:10] : return 주석 품 ( return이 없을 경우 밑의 소스가 그대로 실행됨 )
                 return;
@@ -72,7 +74,7 @@ namespace MiniProject
 
                         if (struserID != "")
                         {
-                            MessageBox.Show("접속성공", "로그인성공");
+                            MetroMessageBox.Show(this,"접속성공", "로그인성공");
                             Commons.LOGINUSERID = struserID;
                             //ProductForm form = new ProductForm();
                             //form.WindowState = FormWindowState.Maximized;
@@ -81,7 +83,7 @@ namespace MiniProject
                         }
                         else
                         {
-                            MessageBox.Show("접속실패", "로그인실패", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MetroMessageBox.Show(this,"접속실패", "로그인실패", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return;
                         }
 
@@ -89,7 +91,7 @@ namespace MiniProject
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("로그인에 실패했습니다.\n아이디/비밀번호를 확인해 주세요.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MetroMessageBox.Show(this,"로그인에 실패했습니다.\n아이디/비밀번호를 확인해 주세요.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtID.Clear();
                     txtPassword.Clear();
                     txtID.Focus();
@@ -122,7 +124,7 @@ namespace MiniProject
 
                         if(strMasterID !="")
                         {
-                            MessageBox.Show("접속성공", "로그인성공");
+                            MetroMessageBox.Show(this,"접속성공", "로그인성공");
                             //HJ 수정 [20200703 16:40] : form.showDialog()를 하게 되면 Login창이 꺼지지 않음, 코드 위치 수정
                             //HJ 추가 [20200703 20:55] : Program.cs에 미리 창을 만들어 놓음으로서 Login창이 꺼지더라도 관리자 창이 안꺼지도록 수정
                             Commons.LOGINUSERID = strMasterID;
@@ -132,14 +134,14 @@ namespace MiniProject
                         }
                         else
                         {
-                            MessageBox.Show("접속실패", "로그인실패", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MetroMessageBox.Show(this,"접속실패", "로그인실패", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return;
                         }
                     }
                 }
                 catch(Exception)
                 {
-                    MessageBox.Show("로그인에 실패했습니다.\n아이디 / 비밀번호를 확인해 주세요.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MetroMessageBox.Show(this,"로그인에 실패했습니다.\n아이디 / 비밀번호를 확인해 주세요.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtID.Clear();
                     txtPassword.Clear();
                     txtID.Focus ();
@@ -154,6 +156,19 @@ namespace MiniProject
             if(e.KeyChar==(char)13)
             {
                 txtPassword.Focus();
+        
+                txtID.BackColor = SystemColors.Control;
+                panel4.BackColor = SystemColors.Control;
+                label1.BackColor = SystemColors.Control; ;
+                txtPassword.BackColor = Color.White;
+                panel7.BackColor = SystemColors.Window;
+                label2.BackColor = Color.White;
+                
+            }
+            if (e.KeyChar == (char)9)
+            {
+                
+
             }
         }
 
@@ -162,6 +177,12 @@ namespace MiniProject
             if(e.KeyChar==(char)13)
             {
                btnOK.Focus();
+                txtID.BackColor = SystemColors.Control;
+                panel4.BackColor = SystemColors.Control;
+                label1.BackColor = SystemColors.Control; ;
+                txtPassword.BackColor = SystemColors.Control;
+                panel7.BackColor = SystemColors.Control;
+                label2.BackColor = SystemColors.Control;
             }
         }
 
@@ -174,6 +195,89 @@ namespace MiniProject
         {
             NewMemberForm form = new NewMemberForm();
             form.ShowDialog();
+        }
+
+        private void txtID_TextChanged(object sender, EventArgs e)
+        {
+            txtID.BackColor = Color.White;
+            panel4.BackColor = SystemColors.Window;
+            label1.BackColor = Color.White;
+            txtPassword.BackColor = SystemColors.Control;
+            panel7.BackColor = SystemColors.Control;
+            label2.BackColor = SystemColors.Control;
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            txtID.BackColor = SystemColors.Control;
+            panel4.BackColor = SystemColors.Control;
+            label1.BackColor = SystemColors.Control; ;
+            txtPassword.BackColor = Color.White;
+            panel7.BackColor = SystemColors.Window;
+            label2.BackColor = Color.White;
+        }
+
+        private void panel4_Click(object sender, EventArgs e)
+        {
+            txtID.BackColor = Color.White;
+            panel4.BackColor = SystemColors.Window;
+            label1.BackColor = Color.White;
+            txtPassword.BackColor = SystemColors.Control;
+            panel7.BackColor = SystemColors.Control;
+            label2.BackColor = SystemColors.Control;
+        }
+
+        private void panel7_Click(object sender, EventArgs e)
+        {
+            
+            txtPassword.BackColor = Color.White;
+            panel7.BackColor = SystemColors.Window;
+            label2.BackColor = Color.White;
+
+            txtID.BackColor = SystemColors.Control;
+            panel4.BackColor = SystemColors.Control;
+            label1.BackColor = SystemColors.Control;
+        }
+
+        private void txtID_Click(object sender, EventArgs e)
+        {
+            txtID.BackColor = Color.White;
+            panel4.BackColor = SystemColors.Window;
+            label1.BackColor = Color.White;
+            txtPassword.BackColor = SystemColors.Control;
+            panel7.BackColor = SystemColors.Control;
+            label2.BackColor = SystemColors.Control;
+        }
+
+        private void txtPassword_Click(object sender, EventArgs e)
+        {
+            txtPassword.BackColor = Color.White;
+            panel7.BackColor = SystemColors.Window;
+            label2.BackColor = Color.White;
+
+            txtID.BackColor = SystemColors.Control;
+            panel4.BackColor = SystemColors.Control;
+            label1.BackColor = SystemColors.Control;
+        }
+
+        private void rdbtnAdmin_CheckedChanged(object sender, EventArgs e)
+        {
+            txtID.BackColor = Color.White;
+            panel4.BackColor = SystemColors.Window;
+            label1.BackColor = Color.White;
+            txtPassword.BackColor = SystemColors.Control;
+            panel7.BackColor = SystemColors.Control;
+            label2.BackColor = SystemColors.Control;
+        }
+
+        private void rdbtnMember_CheckedChanged(object sender, EventArgs e)
+        {
+            txtID.BackColor = Color.White;
+            panel4.BackColor = SystemColors.Window;
+            label1.BackColor = Color.White;
+            txtPassword.BackColor = SystemColors.Control;
+            panel7.BackColor = SystemColors.Control;
+            label2.BackColor = SystemColors.Control;
         }
     }
 }

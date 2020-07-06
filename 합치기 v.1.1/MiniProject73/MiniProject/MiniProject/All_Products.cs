@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 namespace MiniProject
 {
-    public partial class All_Products : MetroForm
+    public partial class All_Products : Form
     {
 
         public int User_std1;
@@ -35,7 +35,7 @@ namespace MiniProject
         private void All_Products_Load(object sender, EventArgs e)
         {
             UpdateData();
-            lblUser.Text = Commons.LOGINUSERID;
+            label2.Text = Commons.LOGINUSERID;
 
             // HJ 추가(임시) [20200703 12:40]: 화면크기 조정
             this.WindowState = FormWindowState.Maximized;
@@ -824,6 +824,27 @@ namespace MiniProject
             RmdForm form = new RmdForm();
             form.StartPosition = FormStartPosition.CenterScreen;
             form.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void All_Products_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MetroMessageBox.Show(this, "정말 종료하시겠습니까?", "종료", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                foreach (var item in this.MdiChildren)
+                {
+                    item.Close();
+                }
+                Environment.Exit(0);
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

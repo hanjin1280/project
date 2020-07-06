@@ -1,11 +1,13 @@
-﻿using System;
+﻿using MetroFramework;
+using MetroFramework.Forms;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace MiniProject
 {
-    public partial class ProductForm : Form
+    public partial class ProductForm : MetroForm
     {
         public ProductForm()
         {
@@ -14,18 +16,20 @@ namespace MiniProject
 
         private void ProductForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("정말 종료하시겠습니까?", "종료", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            if (MetroMessageBox.Show(this,"정말 종료하시겠습니까?", "종료", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
                 foreach (var item in this.MdiChildren)
                 {
                     item.Close();
                 }
                 e.Cancel = false;
+                
             }
             else
             {
                 e.Cancel = true;
             }
+
         }
 
         private void ProductForm_Load(object sender, EventArgs e)

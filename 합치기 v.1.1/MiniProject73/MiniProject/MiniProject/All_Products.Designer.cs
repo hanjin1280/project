@@ -28,134 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.BtnSpecific = new MetroFramework.Controls.MetroButton();
-            this.grdPhonetbl = new MetroFramework.Controls.MetroGrid();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(All_Products));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cboPrice = new System.Windows.Forms.ComboBox();
             this.CboData = new System.Windows.Forms.ComboBox();
             this.cboService = new System.Windows.Forms.ComboBox();
-            this.btnSearch = new MetroFramework.Controls.MetroButton();
             this.priceTbl = new MetroFramework.Controls.MetroGrid();
-            this.btnInit = new MetroFramework.Controls.MetroButton();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.lblUser = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.NewRecommend = new MetroFramework.Controls.MetroButton();
-            ((System.ComponentModel.ISupportInitialize)(this.grdPhonetbl)).BeginInit();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnInit = new System.Windows.Forms.Button();
+            this.BtnSpecific = new System.Windows.Forms.Button();
+            this.NewRecommend = new System.Windows.Forms.Button();
+            this.grdPhonetbl = new MetroFramework.Controls.MetroGrid();
             ((System.ComponentModel.ISupportInitialize)(this.priceTbl)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdPhonetbl)).BeginInit();
             this.SuspendLayout();
-            // 
-            // BtnSpecific
-            // 
-            this.BtnSpecific.Location = new System.Drawing.Point(722, 127);
-            this.BtnSpecific.Name = "BtnSpecific";
-            this.BtnSpecific.Size = new System.Drawing.Size(109, 26);
-            this.BtnSpecific.TabIndex = 1;
-            this.BtnSpecific.Text = "자세히";
-            this.BtnSpecific.UseSelectable = true;
-            this.BtnSpecific.UseWaitCursor = true;
-            this.BtnSpecific.Click += new System.EventHandler(this.btnSpecific_Click);
-            // 
-            // grdPhonetbl
-            // 
-            this.grdPhonetbl.AllowUserToAddRows = false;
-            this.grdPhonetbl.AllowUserToDeleteRows = false;
-            this.grdPhonetbl.AllowUserToResizeColumns = false;
-            this.grdPhonetbl.AllowUserToResizeRows = false;
-            this.grdPhonetbl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.grdPhonetbl.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.grdPhonetbl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.grdPhonetbl.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.grdPhonetbl.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdPhonetbl.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.grdPhonetbl.ColumnHeadersHeight = 15;
-            this.grdPhonetbl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grdPhonetbl.DefaultCellStyle = dataGridViewCellStyle8;
-            this.grdPhonetbl.EnableHeadersVisualStyles = false;
-            this.grdPhonetbl.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.grdPhonetbl.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.grdPhonetbl.Location = new System.Drawing.Point(23, 127);
-            this.grdPhonetbl.Name = "grdPhonetbl";
-            this.grdPhonetbl.ReadOnly = true;
-            this.grdPhonetbl.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdPhonetbl.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.grdPhonetbl.RowHeadersWidth = 30;
-            this.grdPhonetbl.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.grdPhonetbl.RowTemplate.Height = 27;
-            this.grdPhonetbl.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdPhonetbl.Size = new System.Drawing.Size(679, 408);
-            this.grdPhonetbl.TabIndex = 0;
-            this.grdPhonetbl.UseWaitCursor = true;
-            this.grdPhonetbl.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdPhonetbl_CellClick);
-            this.grdPhonetbl.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdPhonetbl_CellContentClick);
             // 
             // cboPrice
             // 
+            this.cboPrice.BackColor = System.Drawing.SystemColors.Window;
             this.cboPrice.FormattingEnabled = true;
-            this.cboPrice.Location = new System.Drawing.Point(23, 98);
+            this.cboPrice.Location = new System.Drawing.Point(236, 134);
             this.cboPrice.Name = "cboPrice";
-            this.cboPrice.Size = new System.Drawing.Size(163, 23);
+            this.cboPrice.Size = new System.Drawing.Size(180, 23);
             this.cboPrice.TabIndex = 2;
-            this.cboPrice.UseWaitCursor = true;
+            //this.cboPrice.UseWaitCursor = true;
             // 
             // CboData
             // 
+            this.CboData.BackColor = System.Drawing.SystemColors.Window;
             this.CboData.FormattingEnabled = true;
-            this.CboData.Location = new System.Drawing.Point(192, 98);
+            this.CboData.Location = new System.Drawing.Point(498, 134);
             this.CboData.Name = "CboData";
-            this.CboData.Size = new System.Drawing.Size(163, 23);
+            this.CboData.Size = new System.Drawing.Size(180, 23);
             this.CboData.TabIndex = 2;
-            this.CboData.UseWaitCursor = true;
+            //this.CboData.UseWaitCursor = true;
             // 
             // cboService
             // 
+            this.cboService.BackColor = System.Drawing.SystemColors.Window;
             this.cboService.FormattingEnabled = true;
-            this.cboService.Location = new System.Drawing.Point(361, 98);
+            this.cboService.Location = new System.Drawing.Point(760, 134);
             this.cboService.Name = "cboService";
-            this.cboService.Size = new System.Drawing.Size(163, 23);
+            this.cboService.Size = new System.Drawing.Size(180, 23);
             this.cboService.TabIndex = 2;
-            this.cboService.UseWaitCursor = true;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(541, 98);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch.TabIndex = 3;
-            this.btnSearch.Text = "조회";
-            this.btnSearch.UseSelectable = true;
-            this.btnSearch.UseWaitCursor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            //this.cboService.UseWaitCursor = true;
             // 
             // priceTbl
             // 
@@ -164,165 +96,329 @@
             this.priceTbl.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.priceTbl.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.priceTbl.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.priceTbl.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.priceTbl.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.priceTbl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.priceTbl.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.priceTbl.DefaultCellStyle = dataGridViewCellStyle2;
             this.priceTbl.EnableHeadersVisualStyles = false;
             this.priceTbl.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.priceTbl.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.priceTbl.Location = new System.Drawing.Point(835, 534);
+            this.priceTbl.Location = new System.Drawing.Point(452, 0);
             this.priceTbl.Name = "priceTbl";
             this.priceTbl.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.priceTbl.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.priceTbl.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.priceTbl.RowHeadersWidth = 51;
             this.priceTbl.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.priceTbl.RowTemplate.Height = 27;
             this.priceTbl.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.priceTbl.Size = new System.Drawing.Size(10, 10);
             this.priceTbl.TabIndex = 4;
-            this.priceTbl.UseWaitCursor = true;
+            //this.priceTbl.UseWaitCursor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.priceTbl);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
+            this.panel1.Size = new System.Drawing.Size(1600, 105);
+            this.panel1.TabIndex = 10;
+            //this.panel1.UseWaitCursor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(29, 62);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 37);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 28;
+            this.pictureBox1.TabStop = false;
+            //this.pictureBox1.UseWaitCursor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.MediumPurple;
+            this.button1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Window;
+            this.button1.Location = new System.Drawing.Point(1548, 52);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(40, 40);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            //this.button1.UseWaitCursor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("굴림", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Window;
+            this.label2.Location = new System.Drawing.Point(332, 75);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 17);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "login";
+            //this.label2.UseWaitCursor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("비비트리고딕_L", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Window;
+            this.label3.Location = new System.Drawing.Point(85, 62);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(173, 34);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "모든 요금제";
+            //this.label3.UseWaitCursor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("굴림", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.label1.Location = new System.Drawing.Point(259, 75);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "사용자 : ";
+            //this.label1.UseWaitCursor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("비비트리고딕_L", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.ForeColor = System.Drawing.Color.MediumPurple;
+            this.label4.Location = new System.Drawing.Point(185, 135);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 19);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "가격";
+            //this.label4.UseWaitCursor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("비비트리고딕_L", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5.ForeColor = System.Drawing.Color.MediumPurple;
+            this.label5.Location = new System.Drawing.Point(429, 135);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(63, 19);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "데이터";
+            //this.label5.UseWaitCursor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("비비트리고딕_L", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6.ForeColor = System.Drawing.Color.MediumPurple;
+            this.label6.Location = new System.Drawing.Point(709, 135);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(45, 19);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "혜택";
+            //this.label6.UseWaitCursor = true;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.MediumPurple;
+            this.btnSearch.Font = new System.Drawing.Font("비비트리고딕_L", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnSearch.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnSearch.Location = new System.Drawing.Point(1015, 135);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(250, 50);
+            this.btnSearch.TabIndex = 12;
+            this.btnSearch.Text = "조 회";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            //this.btnSearch.UseWaitCursor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnInit
             // 
-            this.btnInit.Location = new System.Drawing.Point(722, 75);
+            this.btnInit.BackColor = System.Drawing.Color.MediumPurple;
+            this.btnInit.Font = new System.Drawing.Font("비비트리고딕_L", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnInit.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnInit.Location = new System.Drawing.Point(1015, 194);
             this.btnInit.Name = "btnInit";
-            this.btnInit.Size = new System.Drawing.Size(109, 23);
-            this.btnInit.TabIndex = 5;
+            this.btnInit.Size = new System.Drawing.Size(250, 50);
+            this.btnInit.TabIndex = 12;
             this.btnInit.Text = "모든 목록 보기";
-            this.btnInit.UseSelectable = true;
-            this.btnInit.UseWaitCursor = true;
+            this.btnInit.UseVisualStyleBackColor = false;
+            //this.btnInit.UseWaitCursor = true;
             this.btnInit.Click += new System.EventHandler(this.btnInit_Click);
             // 
-            // metroLabel1
+            // BtnSpecific
             // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(76, 75);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(41, 19);
-            this.metroLabel1.TabIndex = 7;
-            this.metroLabel1.Text = "가 격";
-            this.metroLabel1.UseWaitCursor = true;
-            this.metroLabel1.Click += new System.EventHandler(this.btnSpecific_Click);
-            // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(245, 75);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(51, 19);
-            this.metroLabel2.TabIndex = 7;
-            this.metroLabel2.Text = "데이터";
-            this.metroLabel2.UseWaitCursor = true;
-            this.metroLabel2.Click += new System.EventHandler(this.btnSpecific_Click);
-            // 
-            // metroLabel3
-            // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(426, 75);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(37, 19);
-            this.metroLabel3.TabIndex = 7;
-            this.metroLabel3.Text = "혜택";
-            this.metroLabel3.UseWaitCursor = true;
-            this.metroLabel3.Click += new System.EventHandler(this.btnSpecific_Click);
-            // 
-            // lblUser
-            // 
-            this.lblUser.AutoSize = true;
-            this.lblUser.Location = new System.Drawing.Point(260, 18);
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(38, 19);
-            this.lblUser.TabIndex = 8;
-            this.lblUser.Text = "login";
-            this.lblUser.UseWaitCursor = true;
-            // 
-            // metroLabel4
-            // 
-            this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(189, 18);
-            this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(62, 19);
-            this.metroLabel4.TabIndex = 9;
-            this.metroLabel4.Text = "사용자 : ";
-            this.metroLabel4.UseWaitCursor = true;
+            this.BtnSpecific.BackColor = System.Drawing.Color.MediumPurple;
+            this.BtnSpecific.Font = new System.Drawing.Font("비비트리고딕_L", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.BtnSpecific.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.BtnSpecific.Location = new System.Drawing.Point(1015, 291);
+            this.BtnSpecific.Name = "BtnSpecific";
+            this.BtnSpecific.Size = new System.Drawing.Size(250, 50);
+            this.BtnSpecific.TabIndex = 12;
+            this.BtnSpecific.Text = "자세히";
+            this.BtnSpecific.UseVisualStyleBackColor = false;
+            //this.BtnSpecific.UseWaitCursor = true;
+            this.BtnSpecific.Click += new System.EventHandler(this.btnSpecific_Click);
             // 
             // NewRecommend
             // 
-            this.NewRecommend.Location = new System.Drawing.Point(722, 206);
+            this.NewRecommend.BackColor = System.Drawing.Color.MediumPurple;
+            this.NewRecommend.Font = new System.Drawing.Font("비비트리고딕_L", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.NewRecommend.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.NewRecommend.Location = new System.Drawing.Point(1015, 347);
             this.NewRecommend.Name = "NewRecommend";
-            this.NewRecommend.Size = new System.Drawing.Size(109, 26);
-            this.NewRecommend.TabIndex = 1;
-            this.NewRecommend.Text = "새로운 추천!";
-            this.NewRecommend.UseSelectable = true;
-            this.NewRecommend.UseWaitCursor = true;
+            this.NewRecommend.Size = new System.Drawing.Size(250, 50);
+            this.NewRecommend.TabIndex = 12;
+            this.NewRecommend.Text = "새로운 추천";
+            this.NewRecommend.UseVisualStyleBackColor = false;
+            //this.NewRecommend.UseWaitCursor = true;
             this.NewRecommend.Click += new System.EventHandler(this.NewRecommend_Click);
+            // 
+            // grdPhonetbl
+            // 
+            this.grdPhonetbl.AllowUserToAddRows = false;
+            this.grdPhonetbl.AllowUserToDeleteRows = false;
+            this.grdPhonetbl.AllowUserToResizeColumns = false;
+            this.grdPhonetbl.AllowUserToResizeRows = false;
+            this.grdPhonetbl.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdPhonetbl.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.grdPhonetbl.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.grdPhonetbl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.grdPhonetbl.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.grdPhonetbl.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(65)))), ((int)(((byte)(153)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(73)))), ((int)(((byte)(173)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdPhonetbl.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.grdPhonetbl.ColumnHeadersHeight = 15;
+            this.grdPhonetbl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(73)))), ((int)(((byte)(173)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grdPhonetbl.DefaultCellStyle = dataGridViewCellStyle5;
+            this.grdPhonetbl.EnableHeadersVisualStyles = false;
+            this.grdPhonetbl.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.grdPhonetbl.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.grdPhonetbl.Location = new System.Drawing.Point(143, 174);
+            this.grdPhonetbl.Name = "grdPhonetbl";
+            this.grdPhonetbl.ReadOnly = true;
+            this.grdPhonetbl.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(65)))), ((int)(((byte)(153)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(73)))), ((int)(((byte)(173)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdPhonetbl.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.grdPhonetbl.RowHeadersWidth = 30;
+            this.grdPhonetbl.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.grdPhonetbl.RowTemplate.Height = 27;
+            this.grdPhonetbl.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdPhonetbl.Size = new System.Drawing.Size(881, 721);
+            this.grdPhonetbl.Style = MetroFramework.MetroColorStyle.Purple;
+            this.grdPhonetbl.TabIndex = 0;
+            this.grdPhonetbl.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.grdPhonetbl.UseCustomBackColor = true;
+            //this.grdPhonetbl.UseWaitCursor = true;
+            this.grdPhonetbl.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdPhonetbl_CellClick);
+            this.grdPhonetbl.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdPhonetbl_CellContentClick);
             // 
             // All_Products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(868, 567);
-            this.Controls.Add(this.metroLabel4);
-            this.Controls.Add(this.lblUser);
-            this.Controls.Add(this.metroLabel3);
-            this.Controls.Add(this.metroLabel2);
-            this.Controls.Add(this.metroLabel1);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(1600, 1102);
+            this.Controls.Add(this.NewRecommend);
+            this.Controls.Add(this.BtnSpecific);
             this.Controls.Add(this.btnInit);
-            this.Controls.Add(this.priceTbl);
             this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.cboService);
             this.Controls.Add(this.CboData);
             this.Controls.Add(this.cboPrice);
-            this.Controls.Add(this.NewRecommend);
-            this.Controls.Add(this.BtnSpecific);
             this.Controls.Add(this.grdPhonetbl);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "All_Products";
             this.Text = "전체 상품";
-            this.UseWaitCursor = true;
+            //this.UseWaitCursor = true;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.All_Products_FormClosing);
             this.Load += new System.EventHandler(this.All_Products_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grdPhonetbl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.priceTbl)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdPhonetbl)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private MetroFramework.Controls.MetroButton BtnSpecific;
-        private MetroFramework.Controls.MetroGrid grdPhonetbl;
         private System.Windows.Forms.ComboBox cboPrice;
         private System.Windows.Forms.ComboBox CboData;
         private System.Windows.Forms.ComboBox cboService;
-        private MetroFramework.Controls.MetroButton btnSearch;
         private MetroFramework.Controls.MetroGrid priceTbl;
-        private MetroFramework.Controls.MetroButton btnInit;
-        private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroLabel metroLabel2;
-        private MetroFramework.Controls.MetroLabel metroLabel3;
-        private MetroFramework.Controls.MetroLabel lblUser;
-        private MetroFramework.Controls.MetroLabel metroLabel4;
-        private MetroFramework.Controls.MetroButton NewRecommend;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnInit;
+        private System.Windows.Forms.Button BtnSpecific;
+        private System.Windows.Forms.Button NewRecommend;
+        private MetroFramework.Controls.MetroGrid grdPhonetbl;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
